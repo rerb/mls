@@ -1,4 +1,5 @@
 # Local exclusions:
+db.sqlite3
 emacs.desktop
 stellar.yaml
 /static
