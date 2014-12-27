@@ -27,6 +27,14 @@ class LanguageViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.LanguageSerializer
 
 
+class TagViewSet(viewsets.ModelViewSet):
+    '''
+    API endpoint for Tag CRU.
+    '''
+    queryset = models.Tag.objects.all()
+    serializer_class = serializers.TagSerializer
+
+
 class VoteViewSet(viewsets.ModelViewSet):
     '''
     API endpoint for Vote CRU.

@@ -21,6 +21,14 @@ class CommentSerializer(
                   'tags')
 
 
+class TagSerializer(
+        rest_framework.serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = models.Tag
+        fields = ('id', 'name')
+
+
 class VoteSerializer(
         rest_framework.serializers.HyperlinkedModelSerializer):
 
