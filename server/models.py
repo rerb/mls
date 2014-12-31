@@ -40,7 +40,7 @@ class Comment(models.Model):
     source = models.TextField()
     language = models.ForeignKey(Language)
     commentary = models.TextField(blank=True, null=True)
-    tags = models.ManyToManyField(Tag)
+    tags = models.ManyToManyField(Tag, blank=True, null=True)
 
     def votes(self):
         total = 0
